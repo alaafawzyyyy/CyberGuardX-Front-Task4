@@ -12,30 +12,30 @@ export const getBooks = async (req, res) => {
 
 export const addBook = async (req, res) => {
   const {
-    Author,
-    Title,
-    Description,
-    PhotoLink,
-    Language,
-    Link,
-    Pages,
-    Year
+    author,
+    title,
+    description,
+    photoLink,
+    language,
+    link,
+    pages,
+    year
   } = req.body;
 
-  if (!Author || !Title || !Description || !PhotoLink || !Language || !Link || !Pages || !Year) {
+  if (!author || !title || !description || !photoLink || !language || !link || !pages || !year) {
     return res.status(400).json({ error: 'Please provide all required fields' });
   }
 
   try {
     const newBook = new Book({
-     Author,
-    Title,
-    Description,
-    PhotoLink,
-    Language,
-    Link,
-    Pages,
-    Year
+     author,
+    title,
+    description,
+    photoLink,
+    language,
+    link,
+    pages,
+    year
     });
 
     await newBook.save();

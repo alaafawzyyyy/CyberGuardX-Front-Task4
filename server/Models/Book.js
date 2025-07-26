@@ -2,14 +2,14 @@ import mongoose from "mongoose";
 
 
 const bookSchema = new mongoose.Schema({
-  Author: String,
-  Title: String,
-  Description: String,
-  PhotoLink : String,
-  Language:String,
-  Link:String,
-  Pages:Number,
-  Year:Number
+  author: String,
+  title: String,
+  description: String,
+  photoLink : String,
+  language:String,
+  link:String,
+  pages:Number,
+  year:Number
 });
 
 const Book = mongoose.model('Book', bookSchema)
