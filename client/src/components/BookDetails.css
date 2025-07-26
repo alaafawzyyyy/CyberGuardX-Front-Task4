@@ -1,0 +1,27 @@
+.book-details {
+  flex: 1;
+  background-color: white;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.book-details img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.book-details a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.no-selection {
+  font-style: italic;
+  color: #666;
+}
