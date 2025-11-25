@@ -32,7 +32,7 @@ function BookList({ onSelectBook }) {
           <div className="grid-container">
             {currentBooks.map(book => (
               <div key={book._id} className="book-card" onClick={() => onSelectBook(book)}>
-                <img src={book.imageLink} alt={book.title} />
+                <img src={book.photoLink} alt={book.title} />
                 <h3>{book.title}</h3>
                 <p>{book.author}</p>
               </div>
